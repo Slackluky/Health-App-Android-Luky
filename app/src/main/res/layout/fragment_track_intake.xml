@@ -1,0 +1,214 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFF">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/optionsLayout"
+        android:background="#00032a">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+            android:id="@+id/line"
+            android:textColor="#00032a"
+            android:background="#fff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water"
+            android:textColor="#fff"
+            android:background="#00032a"
+            android:layout_toRightOf="@id/line"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/water"
+            android:layout_toEndOf="@id/line" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/foodLayout"
+        android:visibility="visible"
+        android:layout_below="@+id/optionsLayout"
+        android:background="#fff">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box"
+            android:layout_marginTop="10dp"
+            android:queryHint="Search"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/searchID"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/lv1"
+            android:divider="#00032a"
+            android:dividerHeight="1dp"
+            android:layout_below="@+id/searchID"
+            android:visibility="invisible"
+            android:background="#FFF"/>
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchID"
+            android:text="Quantity :"
+            android:textSize="20sp"
+            android:id="@+id/quantityText"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#000"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/quantityText"
+            android:layout_below="@+id/searchID"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/quantityText"
+            android:id="@+id/quantitySpinner"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:scrollbarSize="@dimen/activity_horizontal_margin"
+            android:visibility="visible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:layout_marginRight="7dp"
+            android:layout_toRightOf="@id/quantitySpinner"
+            android:layout_below="@id/searchID"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/quantitySpinner"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/box4"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFF"
+            android:id="@+id/addButton"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/addButton"
+            android:id="@+id/PreviewText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/box5"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(swipe to remove)"
+            android:textColor="#aaaaaa"
+            android:layout_below="@+id/PreviewText"
+            android:id="@+id/text"
+            android:textSize="13sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:visibility="invisible"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text"
+            android:id="@+id/FoodListRecyclerView"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/waterLayout"
+        android:visibility="invisible"
+        android:layout_below="@+id/optionsLayout"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/waterTrackLayoutID"
+            android:layout_marginTop="60dp">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/minus"
+            android:background="#FFF"
+            android:id="@+id/minusButton"
+            android:layout_marginTop="131dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_toRightOf="@+id/minusButton"
+            android:id="@+id/waterTrackGraphId"
+            android:layout_width="130dp"
+            android:layout_height="300dp"
+            android:layout_toEndOf="@+id/minusButton" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/plus"
+            android:background="#FFF"
+            android:id="@+id/plusButton"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/waterTrackGraphId"
+            android:layout_toEndOf="@+id/waterTrackGraphId"
+            android:layout_marginStart="20dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/waterTrackLayoutID"
+            android:text=""
+            android:textSize="22.5sp"
+            android:id="@+id/textWaterTrack"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

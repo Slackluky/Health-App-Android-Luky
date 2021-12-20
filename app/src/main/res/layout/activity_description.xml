@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="detailFetcher.Description">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/textId">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:text = ""
+            android:id="@+id/textt"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:background="@drawable/box"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/aa"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" AGE"
+                android:textSize="15sp"
+                android:textColor="#4d4646"
+                android:id = "@+id/Age"
+                android:layout_marginTop="8dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Age"
+                android:hint = "Umur"
+                android:textSize="16sp"
+                android:id="@+id/EditAGE"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:textSize="14sp"
+                android:layout_below="@+id/EditAGE"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/AgeError"
+                android:layout_marginStart="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Berat (Kg)"
+                android:textSize="15sp"
+                android:textColor="#4d4646"
+                android:id = "@+id/Weight"
+                android:layout_marginTop="18dp"
+                android:layout_below="@+id/AgeError"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Weight"
+                android:hint = "Berat"
+                android:textSize="16sp"
+                android:id="@+id/EditWeight"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:textSize="14sp"
+                android:layout_below="@+id/EditWeight"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:id="@+id/WeightError"
+                android:text=""
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textSize="15sp"
+                android:textColor="#4d4646"
+                android:id = "@+id/Gender"
+                android:layout_marginTop="18dp"
+                android:layout_below="@+id/WeightError"
+                />
+            <!--Dynamic -->
+            <Spinner
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WeightError"
+                android:layout_toRightOf="@+id/Gender"
+                android:layout_toEndOf="@+id/Gender"
+                android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp"
+                android:id="@+id/GenderSpinner"
+                android:layout_marginTop="17dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:textSize="14sp"
+                android:layout_below="@+id/GenderSpinner"
+                android:layout_marginTop="-1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/GenderError"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinggi Badan"
+                android:textSize="15sp"
+                android:textColor="#4d4646"
+                android:id = "@+id/Height"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/GenderError"
+                />
+            <!--Dynamic -->
+            <Spinner
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Height"
+                android:id="@+id/HeightSpinnerFt"
+                android:layout_marginTop="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ft"
+                android:layout_toRightOf="@id/HeightSpinnerFt"
+                android:textSize="16sp"
+                android:textColor="#4d4646"
+                android:id = "@+id/ft"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="9dp"
+                android:layout_below="@+id/Height"
+                android:layout_toEndOf="@id/HeightSpinnerFt"
+                android:layout_marginStart="1dp" />
+            <!--Dynamic -->
+            <Spinner
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Height"
+                android:layout_toRightOf="@+id/ft"
+                android:layout_toEndOf="@+id/ft"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:id="@+id/HeightSpinnerIn"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="in"
+                android:layout_toRightOf="@id/HeightSpinnerIn"
+                android:textSize="16sp"
+                android:textColor="#4d4646"
+                android:id = "@+id/in"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="9dp"
+                android:layout_below="@+id/Height"
+                android:layout_marginStart="1dp"
+                android:layout_toEndOf="@id/HeightSpinnerIn" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:textSize="13sp"
+                android:layout_below="@+id/HeightSpinnerFt"
+                android:layout_marginTop="-1dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/HeightError"
+                android:text=""
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banyaknya Aktifitas"
+                android:textSize="15sp"
+                android:textColor="#4d4646"
+                android:id = "@+id/Activity"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/HeightError"
+                />
+            <!--Dynamic -->
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Activity"
+                android:id="@+id/ActivitySpinner"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                android:textSize="13sp"
+                android:layout_below="@+id/ActivitySpinner"
+                android:layout_marginTop="-1dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/ActivityError"
+                android:text=""
+                android:layout_marginStart="5dp" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9b2a58"
+                android:text="SUBMIT"
+                android:textColor="#FFFFFF"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:layout_below="@id/ActivityError"
+                android:layout_marginBottom="25dp"/>
+        </RelativeLayout>
+</RelativeLayout>

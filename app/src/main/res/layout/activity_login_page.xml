@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="detailFetcher.LoginPage">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/LogoLayout"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/loginLogo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calcheck"
+                android:textColor="#00032a"
+                android:textSize="50sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lodinLogo2"
+                android:text="@string/health_app"
+                android:textColor="#9b2a58"
+                android:layout_below="@+id/loginLogo1"
+                android:layout_centerHorizontal="true"
+                android:textSize = "30sp"
+                />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LogoLayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/aa">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="20sp"
+            android:textColor="#4d4646"
+            android:id = "@+id/USERNAME"
+            android:layout_marginTop="8dp"
+            />
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/USERNAME"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/username1"
+            android:textSize="18sp"
+            android:id="@+id/EditUSERNAME"
+            android:inputType="text"
+            android:layout_toEndOf="@+id/USERNAME" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EditUSERNAME"
+            android:layout_toRightOf="@+id/USERNAME"
+            android:text=""
+            android:textColor="#FF0000"
+            android:textSize="14sp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/ErrorUSERNAME"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@+id/USERNAME" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="20sp"
+            android:textColor="#4d4646"
+            android:id = "@+id/PASSWORD"
+            android:layout_below="@+id/USERNAME"
+            android:layout_marginTop="45dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/PASSWORD"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/password1"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:id="@+id/EditPASSWORD"
+            android:layout_below="@+id/ErrorUSERNAME"
+            android:inputType="textPassword"
+            android:layout_toEndOf="@+id/PASSWORD" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EditPASSWORD"
+            android:layout_toRightOf="@+id/PASSWORD"
+            android:text=""
+            android:textColor="#FF0000"
+            android:textSize="14sp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/ErrorPASSWORD"
+            android:layout_toEndOf="@+id/PASSWORD"
+            android:layout_marginStart="17dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/aa"
+        android:layout_marginTop="-90dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9b2a58"
+                android:text="@string/login"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/loginButton"
+                android:background="#9b2a58"
+                android:text="@string/signup"
+                android:textColor="#FFFFFF"
+                android:id="@+id/signinButton"
+                android:layout_toEndOf="@+id/loginButton"
+                android:layout_marginStart="10dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="STEPS"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lala1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lala"
+        android:layout_below="@+id/lala1"
+        android:text="1"
+        android:textColor="#2a2a2a"
+        />
+
+    </RelativeLayout>
+</RelativeLayout>

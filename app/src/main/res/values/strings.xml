@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">19330071</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Cek Kalori</string>
+    <string name="nav_header_subtitle">Luky</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="calcheck">Cek Kalori anda</string>
+    <string name="health_app">HEALTH APP</string>
+    <string name="username">USERNAME :</string>
+    <string name="username1">USERNAME</string>
+    <string name="password">PASSWORD :</string>
+    <string name="password1">PASSWORD</string>
+    <string name="confirm">  CONFIRM :</string>
+    <string name="confirm_password1">CONFIRM PASSWORD</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+    <string name="age">AGE</string>
+    <string name="age1">AGE :</string>
+    <string name="CalConsumed">Calories Consumed</string>
+
+    <string-array name="Gender">
+        <item> none </item>
+        <item> Cowok </item>
+        <item> Cewek </item>
+        <item> Bencong </item>
+    </string-array>
+
+    <string-array name="Height_Feet">
+        <item> 0 </item>
+        <item> 1 </item>
+        <item> 2</item>
+        <item> 3</item>
+        <item> 4</item>
+        <item> 5</item>
+        <item> 6</item>
+        <item> 7</item>
+    </string-array>
+
+    <string-array name="Height_Inches">
+        <item> 0 </item>
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+        <item> 11 </item>
+    </string-array>
+
+    <string-array name="Active">
+        <item> - </item>
+        <item>Sangat Aktif</item>
+        <item> Aktif </item>
+        <item> Sedikit Aktif </item>
+        <item> Tidak Aktif </item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Kosong nich</string>
+
+    <string-array name="quantity">
+        <item> 0 </item>
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+    </string-array>
+</resources>

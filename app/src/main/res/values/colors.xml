@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00032a</color>
+    <color name="colorPrimaryDark">#00042a</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="graphGreen">#2E8B57</color>
+    <color name="graphRed">#BF080A</color>
+    <color name="graphBlue">#006994</color>
+    <color name="graphBlue2">#2e889a</color>
+    <color name = "white"> #FFFFFF</color>
+    <color name = "black"> #000</color>
+    <color name = "abcd"> #fffcd5</color>
+    <color name = "FoodAdapterContentHolder"> #eeeeee </color>
+
+</resources>

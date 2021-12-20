@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/contentHolder">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#00032a"
+            android:id="@+id/foodTextID"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="x"
+            android:layout_toRightOf="@id/foodTextID"
+            android:textColor="#00032a"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/xTextView"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/foodTextID" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text=""
+            android:layout_toRightOf="@id/xTextView"
+            android:textColor="#00032a"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/quantityTextID"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/xTextView" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foodTextID"
+            android:textSize="15sp"
+            android:text=""
+            android:id="@+id/CalorieTextID"
+            android:textColor="@color/graphBlue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories"
+            android:textColor="@color/graphBlue"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/CalorieTextID"
+            android:layout_below="@+id/foodTextID"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/CalorieTextID"
+            android:layout_marginStart="8dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#eee"
+        android:layout_marginTop="5dp"
+        />
+</LinearLayout>

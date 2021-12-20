@@ -1,0 +1,208 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/optionsLayout"
+        android:background="#00032a">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+            android:id="@+id/line"
+            android:textColor="#00032a"
+            android:background="#fff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water"
+            android:textColor="#fff"
+            android:background="#00032a"
+            android:layout_toRightOf="@id/line"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/water"
+            android:layout_toEndOf="@id/line" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/foodLayout"
+        android:visibility="visible"
+        android:layout_below="@+id/optionsLayout"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CalConsumed"
+            android:id="@+id/CalorieConsumedText"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:layout_below="@+id/CalorieConsumedText"
+            android:id="@+id/BMRChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BMRChart"
+            android:text = ""
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:id="@+id/numberByTotalTextView"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numberByTotalTextView"
+            android:id="@+id/layoutt"
+            android:layout_centerHorizontal="true">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/box2"
+            android:id="@+id/greenBox" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Exceeded"
+            android:layout_toRightOf="@id/greenBox"
+            android:layout_toEndOf="@id/greenBox"
+            android:layout_marginTop="-5.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/NotExceededLabel"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/box3"
+            android:layout_toRightOf="@id/NotExceededLabel"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/NotExceededLabel"
+            android:id="@+id/redBox"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exceeded"
+            android:layout_toRightOf="@+id/redBox"
+            android:layout_marginTop="-5.8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/redBox"
+            android:layout_marginStart="5dp"
+            />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#00032a"
+            android:layout_below="@+id/layoutt"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/lineView"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_below="@+id/lineView"
+            android:id="@+id/weekGraphFoodId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/waterLayout"
+        android:visibility="invisible"
+        android:layout_below="@+id/optionsLayout"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Consumed"
+            android:id="@+id/WaterConsumedText"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:layout_below="@+id/WaterConsumedText"
+            android:id="@+id/WaterChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WaterChart"
+            android:text = ""
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:id="@+id/numberByTotalTextViewForWater"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#00032a"
+            android:layout_below="@+id/numberByTotalTextViewForWater"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lineViewWater"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:layout_below="@+id/lineViewWater"
+            android:id="@+id/weekGraphWaterId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
